@@ -1,0 +1,311 @@
+
+a:hover, a:focus {
+  color: #7b7b7b;
+  text-decoration: none;
+  outline: 0;
+}
+
+
+.CoronaVirus {
+  position: absolute; 
+  border-radius: 30px;
+  margin-top: 215px;
+  margin-left: 50px;  
+  width: 900px; 
+  height: 200px;  
+}
+
+.CoronaVirus a {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  line-height: 20px;
+  color: #143376;
+  margin-top: 10px;
+}
+
+.col {
+    border-radius: 15px;
+    border:2px solid;
+    padding: 8px;
+}
+
+.col:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+  border-radius: 30px;
+  filter: saturate(180%);
+}
+
+.menu {
+  position: fixed;
+  right: -200px;
+  width: 260px;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  text-align: left;
+}
+
+.menu.menu-open {
+  right: 0;
+}
+
+.menu-wrap {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  background: #1a1a1a;
+  width: 200px;
+  height: 100%
+}
+
+/*.menu-wrap:hover ul li a {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}*/
+
+.menu h1.logo a {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  line-height: 40px;
+  /*text-transform: uppercase;*/
+  color: #143376;
+  margin-top: 20px;
+}
+
+/*.menu h1.logo a:hover {
+  color: #1abc9c;
+}
+
+.menu h1.logo1 a:hover {
+  color: #4169E1;
+}*/
+
+.menu h1.logo1 a {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .15em;
+  line-height: 40px;
+  color: #143376;
+  margin-top: 20px;
+}
+
+
+.menu a {
+  margin-left: 20px;
+  color: gray;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+ /* text-transform: uppercase;*/
+}
+
+.menu a:hover {
+  color: #fff;
+  opacity: 1;
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.menu a:active {
+  color: #fff;
+
+}
+
+
+
+.menu, .body-push {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#menuToggle {
+  
+  /*background-color: #143376;
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -150px;
+  top: -120px;
+  transition: all 0.3s;*/
+  position: absolute;
+  border-radius: 100%;
+  top: 20px;
+  left: 0;
+  z-index: 11;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, .25);
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+  #menuToggle:hover {
+  color: #143376;
+  background: rgba(0, 0, 0, .2);
+  transform: scale(1.2);
+  transition: all 0.3s;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+#headerwrap {
+  background: url(../img/header-bg1.jpg) no-repeat center top;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 670px;
+  width: 100%;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
+ul,li{
+ list-style:none; /* quito el punto de la lista */
+}
+
+
+div ul li{
+ margin:1em;  /* espacio entre las notas */
+ float:left;  /* alinear notas */
+}
+
+div ul li p{
+ font-family:"Roboto",arial,sans-serif;
+ font-size:110%;  /* aumento el tamaño de la fuente */
+ margin: auto; 
+}
+
+
+
+
+
+div ul li a{
+ text-decoration:none;
+ color:#000;
+ background:#ffc; /*Color de nota, COLORES ALTERNATIVO ---> ---    --- #ADFF2F --- #8B008B --- #20B2AA ---*/
+ display:block;
+ height:10em;
+ width:18em;
+ padding:1em;
+ /* Firefox */
+ -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+ /* Safari+Chrome */
+ -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+ /* Opera */
+ box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+ul li a{
+ -webkit-transform:rotate(-6deg);
+ -o-transform:rotate(-6deg);
+ -moz-transform:rotate(-6deg);
+}
+
+ul li a:hover,ul li a:focus{
+ -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+ box-shadow:10px 10px 7px rgba(0,0,0,.7);
+ -webkit-transform: scale(1.25);
+ -moz-transform: scale(1.25);
+ -o-transform: scale(1.25);
+ position:relative;
+ z-index:5;
+}
+
+ul li a{
+ text-decoration:none;
+ color:#000;
+ background:#ffc;
+ display:block;
+ height:10em;
+ width:10em;
+ padding:1em;
+ -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+ -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+ box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+ -moz-transition:-moz-transform .15s linear;
+ -o-transition:-o-transform .15s linear;
+ -webkit-transition:-webkit-transform .15s linear;
+}
+
+
+.popup {
+    background-color: #ffffff;
+    color: #888888;
+    height: 290px;
+    left: 100%;
+    padding: 20px;
+    position: fixed;
+    right: 30%;
+    top: 25%;
+    width: 550px;
+    z-index: 101;
+    -moz-box-shadow: 0px 0px 10px 1px #888888;
+    -webkit-box-shadow: 0px 0px 10px 1px #888888;
+    box-shadow: 0px 0px 10px 1px #888888;
+    border-radius:10px;
+    -moz-border-radius:10px;
+}
+
+.overlay {
+    background: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    opacity:0.5;
+}
+
+a.close {
+    background: url("../cancel.png");
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    left: 32px;
+    position: relative;
+    top: -33px;
+    width: 26px;
+    opacity: 8.5;
+      
+}
+

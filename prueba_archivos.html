@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Prueba Leer Archivo</title>
+	<link rel="stylesheet" href="">
+	<script  src= "funciones_cumpleanios.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	
+	<div id ="miDiv">
+		
+	</div>
+
+	<script type="text/javascript" charset="utf-8" async defer>
+		/*archivo = fopen(getScriptPath("AnunciosPBMC/controller/cumpleanios2.txt"), 0);
+		longitud_archivo = flength(archivo); contenido = fread(archivo, longitud_archivo);
+		document.getElementById("miDiv").innerText = contenido;
+
+		var url = "http://www.example.com/file.json";
+
+		var jsonFile = new XMLHttpRequest();
+		    jsonFile.open("GET",url,true);
+		    jsonFile.send();
+
+	    jsonFile.onreadystatechange = function() {
+	        if (jsonFile.readyState== 4 && jsonFile.status == 200) {
+	            document.getElementById("id-of-element").innerHTML = jsonFile.responseText;
+	        }
+	     }*/
+	     
+	     fetch('AnunciosPBMC/controller/cumpleanios2.txt')
+  		.then(function(response) {
+		      if (response.status !== 200) {
+		        console.log('Looks like there was a problem. Status Code: ' +
+		          response.status);
+		        return;
+		      }
+		      
+		      // Examine the text in the response
+		      response.text().then(
+		      	function(data) {
+		      		data.split('\n');
+		        	console.log(data);
+		        	//console.log(data.length);
+		        	//console.log(data.split('\n'));
+		        	texto_separado = data.split('\n');
+		        	//console.log(texto_separado[0]);
+		        	//console.log(texto_separado[1]);
+		        	//console.log(texto_separado.length);
+		        	linea = texto_separado[1];
+		        	longitud = linea.length;
+		        	
+		        	console.log("linea: " + linea );
+		        	console.log("longitud de linea " + longitud);
+		        	mes = linea.slice(0,2);
+		        	numero_mes = parseInt(mes);
+		        	if(numero_mes >= 9){
+		        		posicion_inicio_nombre = 3;
+		        		longitud_nombre = longitud - 3;
+		        	}
+		        	else
+		        	{
+		        		posicion_inicio_nombre = 2;
+		        		longitud_nombre = longitud - 2;
+		        	}
+		        	nombre = linea.slice(posicion_inicio_nombre, longitud - 2);
+		        	console.log(Number(mes));
+		        	console.log(nombre);
+
+		      });
+		    }
+		  )
+		  .catch(function(err) {
+		    console.log('Fetch Error :-S', err);
+		  });
+		  
+
+	</script>
+
+	
+</body>
+</html>

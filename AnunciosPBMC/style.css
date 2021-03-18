@@ -1,0 +1,188 @@
+﻿#main-header {
+	background: #333;
+	color: white;
+	height: 100px;
+}	
+	#main-header a {
+		color: white;
+	}
+
+#logo-header {
+	float: left;
+	padding: 15px 0 0 100px;
+	text-decoration: none;
+}
+	#logo-header:hover {
+		color: #0b76a6;
+	}
+	
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 2.5em;
+	}
+	
+	#logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+
+#contenedor{ 
+    text-align: center; 
+    margin: 40px 40px 0px 300px;  
+    width: 1000px; 
+
+} 
+
+#lateral{ 
+    background-color: #FFF; 
+    width: 250px; 
+    float:left;
+    margin: 0px 0px 0px -250px; 
+}  
+
+#otrolado{ 
+    background-color: #FFF;
+    float: right;   
+    width: 300px;
+    text-align: left; 
+} 
+
+#principal{ 
+    background-color: #FFF; 
+    margin-left: 200px; 
+    padding: 4 4 4 4px; 
+    width: 310px; 
+    height: 499px;
+} 
+
+h2 { font-size:20px; margin-bottom: 20px; color: rgb(255, 0, 255); } /*---------------------------------------------------------TAMAÑO TITULO----------------------------------------------------------*/
+
+.ListaC { 
+	font-size: 11px;
+	margin: 10px 0 10px 32px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.ListaC li { 
+	color:#333c87;  /*---------------------------------------------------------COLOR LISTA----------------------------------------------------------*/
+	margin: 0 0 7px 0; 
+	background: url(images/templatemo_bullet.png) no-repeat scroll 0 3px;  
+	text-align: left;
+	padding: 0 0 0 20px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#myImg { /*---------------------------------------------------------CONFIGURACION IMAGEN DE ANUNCIO----------------------------------------------------------*/
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 200px; 
+	height: 150px; 
+	padding: 10px;
+	margin-left: 45px;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+.close {
+  position: absolute;
+  top: 60px;
+  right: 230px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+ .close:hover,
+ .close:focus {
+  color: #F92F04;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }	
+}
+
+#carouselSite {  /*---------------------------------------------------------CONFIGURACION TAMAÑO DE IMAGENES DE SLIDES----------------------------------------------------------*/
+  width: 580px; 
+	height: 500px; 
+	padding: 10px;
+	margin-left: -150px;
+}
+
+p{          /*---------------------------------------------------------CONFIGURACION TIPO DE LETRA ANUNCIO----------------------------------------------------------*/
+  font-family: "MS Serif", "New York", serif;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+   width: 40px;
+   height: 40px;
+}
+.carousel-inner img {
+  height: 480px;
+}
