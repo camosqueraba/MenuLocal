@@ -68,6 +68,13 @@
 
             return $dia_actual;
         }
+
+        public static function obtenerNumeroMesActual(){
+
+            $mes_actual = date('m');
+            
+            return $mes_actual;
+        }
     }
 
 ?>

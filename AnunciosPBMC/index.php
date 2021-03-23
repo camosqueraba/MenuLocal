@@ -36,6 +36,7 @@
 			<?php require ('config/ConexionSqlServer.php');?>
 			<?php require ('controller/ArchivoController.php');?>
 			<?php $manejador_archivo = new ArchivoController(); ?>
+	        <?php $manejador_archivo->guardarRegistroCumpleanios(FechaController::obtenerNumeroMesActual());?>
 	        <h4>CUMPLEAÑOS <?=FechaController::obtenerNombreMesActual()?></h4>
             <ul class="ListaC">
 				<?php while ($colum = sqlsrv_fetch_array($result))
@@ -71,7 +72,16 @@
 				<img class="modal-content" id="img01">
 				<div id="caption"></div>
 			</div>
-             <p> <strong>ACTIVIDAD “YO SÍ SÉ LO QUE EL COCOL PREGUNTA”</strong>  <br> Encuentra las cinco (5) preguntas, respóndelas, deposítalas en el buzón y gánate un suculento premio.<br>
+             <p> <p style="text-align: justify;">Con la partida de nuestra apreciada compañera y amiga, <strong>DRA. NANCY ESTRADA PACHECO</strong>, el dolor y el luto embarga los corazones de todos los que pertenecemos a la familia Perfect Body Medical Center.<br>
+
+                Nuestras más sentidas condolencias a su familia en estos momentos de profunda tristeza, oramos por su eterno descanso y para que la Paz y el consuelo del Señor los acompañen y fortalezcan.<br>
+
+                los acompañamos en su dolor...<br>
+
+                "Nunca perdemos a los que amamos porque podemos amarlos en Aquel que no se pierde jamas"
+                <br>
+                San Agustin.<br/><br/>
+                <!--<strong>ACTIVIDAD “YO SÍ SÉ LO QUE EL COCOL PREGUNTA”</strong>  <br> Encuentra las cinco (5) preguntas, respóndelas, deposítalas en el buzón y gánate un suculento premio.<br>-->
 			<br>
 			 </div>  	
 			<div id="principal"> 
@@ -79,6 +89,10 @@
 			 <div id="carouselSite" class="carousel slide" data-ride="carousel">
 			 	<div class="carousel-inner">
 			 		<div class="carousel-item active">
+			 			<img src="images/imagesSlider/mensaje.jpeg" class="img-fluid d-block" style="width:100%">
+			 		</div>
+
+			 		<!--<div class="carousel-item active">
 			 			<img src="images/imagesSlider/f.jpg" class="img-fluid d-block" style="width:100%">
 			 		</div>
 			 		
@@ -119,7 +133,7 @@
 			 		<div class="carousel-item">
 			 			<img src="images/imagesSlider/f16.jpg" class="img-fluid d-block" style="width:100%">
 			 		</div>
-			 		
+			 		-->
 			 	</div>
 			 	<a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
 			 		<span class="carousel-control-prev-icon"></span>

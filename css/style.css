@@ -270,7 +270,7 @@ ul li a{
 .popup {
     background-color: #ffffff;
     color: #888888;
-    height: 290px;
+    height: 450px;
     left: 100%;
     padding: 20px;
     position: fixed;
@@ -308,4 +308,21 @@ a.close {
     opacity: 8.5;
       
 }
-
+h3{
+  font-size: 23px;
+}
+.titulo_items{
+  height:50px; 
+  width:35%;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+.list_items, .item{
+  height:250px; 
+  width:35%;
+}
+.list_items, .item{
+  overflow:hidden; 
+  overflow-y:scroll;
+  
+}
