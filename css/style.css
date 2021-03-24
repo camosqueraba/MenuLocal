@@ -317,12 +317,48 @@ h3{
   padding-bottom: 20px;
   margin-bottom: 25px;
 }
-.list_items, .item{
+.list_items{
+  
+}
+.list_items{
+  
   height:250px; 
   width:35%;
-}
-.list_items, .item{
   overflow:hidden; 
   overflow-y:scroll;
   
+}
+
+/*.large-2 {
+  margin-left: 30px;
+  float: left;
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  width: 100px;
+  background: #ccc;
+}*/
+
+.force-overflow {
+  min-height: 450px;
+}
+
+.list_items::-webkit-scrollbar-track {
+  /*border: 1px solid #000;*/
+  border-style: none;
+  padding: 2px 0;
+  background-color: transparent;
+}
+
+.list_items::-webkit-scrollbar {
+  width: 10px;
+}
+
+.list_items::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #fcf8e3;
+  /*border: 1px solid #000;*/
+  border-style: none;
+  opacity: 0.1;
 }
